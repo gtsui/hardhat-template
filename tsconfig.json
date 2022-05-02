@@ -11,6 +11,5 @@
     "esModuleInterop": true
   },
   "exclude": ["./artifacts", "./cache", "./dist", "./node_modules"],
-  "include": ["./contracts", "./test"],
-  "files": ["./hardhat.config.ts"]
+  "include": ["./hardhat.config.ts", "./deploy", "./scripts", "./test"]
 }
