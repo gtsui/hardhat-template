@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import {HardhatRuntimeEnvironment} from 'hardhat/types';
 
-const CONTRACT_NAME = "";
+const CONTRACT_NAME = "TestContract";
 
 const func = async function(hre: HardhatRuntimeEnvironment) {
   const {ethers, deployments} = hre;
@@ -11,7 +11,7 @@ const func = async function(hre: HardhatRuntimeEnvironment) {
   
   await deploy(CONTRACT_NAME, {
     from: signers[0].address,
-    contract: "",
+    contract: CONTRACT_NAME,
     args: [],
     log: true,
     proxy: false
